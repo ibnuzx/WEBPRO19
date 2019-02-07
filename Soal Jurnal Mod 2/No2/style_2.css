@@ -1,0 +1,25 @@
+html,body{
+	height: 100%;
+	width: 100%
+}
+body,body{
+	display: flex;
+}
+.Foto{
+	background: url(foto_1.png);
+	height: 500px;
+	width: 500px;
+}
+.Gradient{
+	background-image: linear-gradient(red,yellow) ;
+	height: 500px;
+	width: 500px;
+}
+.RGradient{
+	background-image: repeating-radial-gradient(#eee 10%,#ccc 15%) ;
+	height: 500px;
+	width: 500px;
+}
+.Foto:hover{
+	background: url(foto_2.png);
+}
