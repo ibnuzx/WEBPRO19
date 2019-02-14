@@ -1,0 +1,48 @@
+<html>
+<title>Nomor 1 - NIM</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/soal1.css">
+</head>
+<body>
+<h2>Selamat datang ke Jurnal Modul 3!</h2>
+<p>Jangan lupa mulai praktikum terlebih dahulu di Impulsenya.</p>
+<p>Bila ada pertanyaan silahkan hubungi asprak terdekat, terima kasih.</p>
+
+<h1 id="nama"></p>
+<h1 id="nim"></p>
+
+<button class="open-button" onclick="openForm()">Open Form</button>
+<div class="form-popup" id="FormPopUp">
+  <form class="form-container">
+    <h3>Login</h3>
+    <button type="submit" class="btn" onclick="callform()">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+// tulis kodingan disini
+// write your code here
+	function openForm(){
+		var openform = document.getElementById("FormPopUp");
+		openform.style.display = "block"
+	}
+	function callform(){
+		var Nama = prompt("Tuliskan nama anda! ");
+		var Nim = prompt("Tuliskan Nim anda!");
+		var ambilnama = document.getElementById("nama");
+		var ambilnim = document.getElementById("nim");
+		ambilnama.innerHTML="Halo "+Nama +"!";
+		ambilnim.innerHTML="NIM "+Nim +" terdeteksi di database Telkom University";
+		
+	}
+	function closeForm(){
+		var closeform = document.getElementById("FormPopUp");
+		closeform.style.display = "none"
+	}
+
+</script>
+
+</body>
+</html>
